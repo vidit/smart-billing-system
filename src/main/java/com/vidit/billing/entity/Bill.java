@@ -11,13 +11,11 @@ public class Bill {
 	private String status;
 	private LocalDate dueDate;
 	
-	
-	
 	public Bill() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public Bill(Long id, String consumerName, String billNumber, Double amount, String status, LocalDate dueDate) {
 		super();
 		this.id = id;
@@ -68,20 +66,21 @@ public class Bill {
 		this.status = status;
 	}
 
-	public LocalDate getDuDate() {
+	public LocalDate getDueDate() {
 		return dueDate;
 	}
 
-	public void setDuDate(LocalDate dueDate) {
+	public void setDueDate(LocalDate dueDate) {
 		this.dueDate = dueDate;
 	}
 
 	@Override
 	public String toString() {
 		return "Bill [id=" + id + ", consumerName=" + consumerName + ", billNumber=" + billNumber + ", amount=" + amount
-				+ ", status=" + status + ", duDate=" + dueDate + "]";
+				+ ", status=" + status + ", dueDate=" + dueDate + "]";
 	}
-
+	
+	
 	
 	
 	
